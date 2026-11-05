@@ -1,0 +1,23 @@
+{
+  "clientName": "Eaglercraft Remix",
+  "welcomeText": "A custom client shell with visual mods, world presets, and a browser-based launcher feel.",
+  "status": "Connected",
+  "worlds": [
+    { "name": "Spawn Valley", "mode": "Survival" },
+    { "name": "Nether Rift", "mode": "Hardcore" },
+    { "name": "Sky Temple", "mode": "Creative" },
+    { "name": "Y0 Depths", "mode": "Exploration" }
+  ],
+  "mods": [
+    { "name": "Mace", "state": "Enabled" },
+    { "name": "Spear", "state": "Enabled" },
+    { "name": "Custom UI", "state": "Enabled" },
+    { "name": "World Loader", "state": "Enabled" }
+  ],
+  "logs": [
+    "[info] Client booted successfully",
+    "[info] Loading world profiles",
+    "[info] Mods initialized",
+    "[info] Ready for launch"
+  ]
+}

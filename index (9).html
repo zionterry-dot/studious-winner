@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eaglercraft Remix</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-noise"></div>
+
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-icon">E</div>
+          <div>
+            <h1>Eaglercraft</h1>
+            <p>Remix Client</p>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <button class="nav-btn active">Home</button>
+          <button class="nav-btn">Play</button>
+          <button class="nav-btn">Mods</button>
+          <button class="nav-btn">Settings</button>
+        </nav>
+
+        <div class="status-card">
+          <span class="status-dot"></span>
+          <div>
+            <h3>Client status</h3>
+            <p id="client-status">Connected</p>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div class="title-wrap">
+            <p class="eyebrow">Client Build</p>
+            <h2 id="client-name">Loading...</h2>
+          </div>
+
+          <div class="actions">
+            <button class="ghost-btn">Update</button>
+            <button class="primary-btn">Launch</button>
+          </div>
+        </header>
+
+        <section class="hero">
+          <div class="hero-copy">
+            <span class="tag">v1.0 custom</span>
+            <h3>Custom world sandbox</h3>
+            <p id="welcome-text">
+              Loading client profile...
+            </p>
+          </div>
+
+          <div class="hero-card">
+            <div class="mini-stat">
+              <span>FPS</span>
+              <strong>144</strong>
+            </div>
+            <div class="mini-stat">
+              <span>Chunks</span>
+              <strong>64</strong>
+            </div>
+            <div class="mini-stat">
+              <span>Seed</span>
+              <strong>2048</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Featured worlds</h3>
+              <button class="small-btn">New</button>
+            </div>
+
+            <ul id="world-list" class="item-list">
+              <li>Loading worlds...</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Loaded mods</h3>
+              <button class="small-btn">Manage</button>
+            </div>
+
+            <ul id="mod-list" class="item-list">
+              <li>Loading mods...</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="panel log-panel">
+          <div class="panel-header">
+            <h3>Client log</h3>
+            <button class="small-btn">Clear</button>
+          </div>
+
+          <div id="log-output" class="log-output">
+            <p>Booting client...</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
